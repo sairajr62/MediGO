@@ -1,0 +1,5 @@
+# Block direct directory listing and script execution in the uploads area.
+Options -Indexes
+<FilesMatch "\.(php|phtml|phar|cgi|pl|py)$">
+    Require all denied
+</FilesMatch>
